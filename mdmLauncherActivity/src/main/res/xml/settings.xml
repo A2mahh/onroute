@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:fragment="com.prestigio.launcher.mdm.LanguagePreferenceFragment"
+        android:summary=""
+        android:title="@string/language">
+    </header>
+    <header
+        android:summary=""
+        android:title="@string/sim_managements">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.settings.Settings$SimManagementActivity"
+            android:targetPackage="com.android.settings"
+            >
+
+        </intent>
+    </header>
+</preference-headers>

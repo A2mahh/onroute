@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apps_list>
+    <info>
+        <application
+            packageName="ru.yandex.taxi"
+            className="ru.yandex.taxi.activity.StartActivity"
+            />
+
+        <application
+            packageName="ru.yandex.weatherplugin"
+            className="ru.yandex.weatherplugin.ui.MainActivity"
+            />
+
+        <application
+            packageName="ru.yandex.yandexmaps"
+            className="ru.yandex.yandexmaps.MapActivity"
+            /> 
+
+        <application
+            packageName="ru.yandex.metro"
+            className="ru.yandex.metro.MapActivity"
+            />
+
+        <application
+            packageName="com.pocketools.currency"
+            className="com.pocketools.currency.PocketCurrency"
+            />
+
+
+        <application
+            packageName="ru.yandex.translate"
+            className="ru.yandex.translate.activities.MainActivity"
+            />
+        <application
+            packageName="org.zwanoo.android.speedtest"
+            className="com.ookla.speedtest.softfacade.MainActivity"
+            /><application
+            packageName="com.accor.appli.hybrid"
+            className="com.accor.appli.hybrid.HomeActivity"
+            /><application
+            packageName="com.mobimate.cwttogo"
+            className="com.worldmate.SplashActivity"
+            /><application
+            packageName="com.hoteliaglobal.idev"
+            className="com.hoteliaglobal.idev.ItezActivity"
+            /><application
+            packageName="net.notify.notifymdm"
+            className="net.notify.notifymdm.activity.NotifyMDMActivity"
+            />
+    </info>
+    <communication>
+
+        <application
+            packageName="com.whatsapp"
+            className="com.whatsapp.Main"
+            />
+
+        <application
+            packageName="org.onroute.servicemanager"
+            className="org.onroute.servicemanager.UserActivity"
+            />
+
+    </communication>
+</apps_list>

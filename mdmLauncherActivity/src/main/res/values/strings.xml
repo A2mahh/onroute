@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MdmLauncherActivity</string>
+    <string name="mb_spent">Mb Spent</string>
+    <string name="mb_left">Mb Left</string>
+    <string name="internet">modem on</string>
+     <string name="internet_off">modem off</string>
+    <string name="hotspot">Wi-Fi on</string>
+    <string name="hotspot_off">Wi-Fi off</string>
+    <string name="airplane">Airplane on</string>
+    <string name="airplane_off">Airplane off</string>
+    
+    <string name="password">Password</string>
+    <string name="refill_balance">Refill Balance</string>
+    <string name="power_off">Power Off</string>
+    <string name="onroute_info">OnRoute Info</string>
+    <string name="onroute_comm">ONROUTE COMM…</string>
+    <string name="network_ssid">Network SSID</string>
+    <string name="enter_ssid">Enter the SSID</string>
+    <string name="security">Security</string>
+    <string name="password_hotspot">Password</string>
+    <string name="eight_characters">The password must have at least 8 characters.</string>
+    <string name="show_password">Show password</string>
+    <string name="advanced_options">Advanced options</string>
+    <string name="language">Language</string>
+    <string name="sim_managements">SIM management</string>
+</resources>

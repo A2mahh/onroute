@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+    >
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:background="#3d3d3d"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <com.todddavies.components.progressbar.ProgressWheel
+                android:id="@+id/pw_spinner_spent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                ProgressWheel:rimColor="#4d4d4d"
+                ProgressWheel:barColor="#9c005d"
+                ProgressWheel:barWidth="6dp"
+                ProgressWheel:rimWidth="3dp"
+                ProgressWheel:circleColor="#00000000"
+                ProgressWheel:contourColor="#00000000"
+                ProgressWheel:contourSize="0dp"
+                android:layout_centerVertical="true"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pw_spinner_spent"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_mb_spent"
+                        android:text="0.0"
+                        android:textSize="32sp"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-light"
+                        android:singleLine="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mb_spent"
+                        android:textSize="12sp"
+                        android:textColor="#9e9e9e"
+                        android:fontFamily="sans-serif"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <com.todddavies.components.progressbar.ProgressWheel
+                android:id="@+id/pw_spinner_left"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                ProgressWheel:rimColor="#4d4d4d"
+                ProgressWheel:barColor="#169545"
+                ProgressWheel:barWidth="6dp"
+                ProgressWheel:rimWidth="3dp"
+                ProgressWheel:circleColor="#00000000"
+                ProgressWheel:contourColor="#00000000"
+                ProgressWheel:contourSize="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pw_spinner_left"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_mb_left"
+                        android:text="0.0"
+                        android:textSize="32sp"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-light"
+                        android:singleLine="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mb_left"
+                        android:textSize="12sp"
+                        android:textColor="#9e9e9e"
+                        android:fontFamily="sans-serif"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#717171"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/first_line_buttons"
+            >
+
+            <TextView
+                android:id="@+id/textViewInternet"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img_data_off"
+                android:gravity="center"
+                android:text="@string/internet"
+                
+                android:clickable="true"
+                android:soundEffectsEnabled="true"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#717171"
+                />
+<!-- android:onClick="onClickInternet" -->
+            <TextView
+                android:id="@+id/textViewWifi"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img_wifi_off"
+                android:gravity="center"
+                android:text="@string/hotspot"
+                android:onClick="onClickHotspot"
+                android:clickable="true"
+                android:soundEffectsEnabled="true"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                />
+
+            <TextView
+                android:id="@+id/textViewAirplane"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img_airplane_off"
+                android:gravity="center"
+                android:text="@string/airplane"
+                android:onClick="onClickAirplane"
+                android:clickable="true"
+                android:soundEffectsEnabled="true"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                />
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img_password_on"
+                android:gravity="center"
+                android:text="@string/password"
+                android:onClick="onClickPassword"
+                android:clickable="true"
+                android:soundEffectsEnabled="true"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/first_line_buttons"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textViewRefill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/img_refill"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:onClick="onClickRefil"
+                android:soundEffectsEnabled="true"
+                android:text="@string/refill_balance"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                >
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="34sp"
+                    android:gravity="center"
+                    android:format24Hour="kk:mm"
+                    android:format12Hour="hh:mm aa"
+                    android:fontFamily="sans-serif-thin"
+                    android:singleLine="true"
+                    />
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:format24Hour="EEEE, MMMM dd"
+                    android:format12Hour="EEEE, MMMM dd"
+                    android:fontFamily="sans-serif-thin"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewPowerOff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/img_power_on"
+                android:gravity="center"
+                android:onClick="onClickPoweroff"
+                android:soundEffectsEnabled="true"
+                android:singleLine="true"
+                android:text="@string/power_off" />
+
+        </LinearLayout>
+
+        <!--Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Enable test"
+            android:onClick="enableTest"
+            android:layout_alignParentLeft="true"
+            />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Disable test"
+            android:onClick="disableTest"
+            android:layout_alignParentRight="true"
+            /-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+
+            <FrameLayout
+                android:id="@+id/viewOnRouteInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#9b59b6"
+                android:onClick="onClickAllAppsInfo"
+                android:clickable="true"
+                android:soundEffectsEnabled="true"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/img_info"
+                    android:background="#9b59b6"
+                    android:textColor="#000000"
+                    android:text="@string/onroute_info"
+                    android:singleLine="false"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+
+                    android:clickable="false"
+
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/viewOnrouteComm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#16a085"
+                android:onClick="onClickAllAppsCommunications"
+                android:clickable="true"
+                android:soundEffectsEnabled="true"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/img_onroute"
+                    android:background="#16a085"
+                    android:textColor="#000000"
+                    android:text="@string/onroute_comm"
+                    android:singleLine="false"
+                    android:maxLines="2"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+
+                    android:clickable="false"
+
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
